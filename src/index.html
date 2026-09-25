@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prayer Times Widget: Today&#x27;s Salah Times for Your Location</title>
+  <meta name="description" content="Free prayer times widget showing today&#x27;s Fajr, Dhuhr, Asr, Maghrib and Isha for your location, with a live countdown and 12 calculation methods. Embed it on any website.">
+  <link rel="canonical" href="{{SITE_URL}}">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prayer Times Widget: Today&#x27;s Salah Times for Your Location">
+  <meta property="og:description" content="Free prayer times widget showing today&#x27;s Fajr, Dhuhr, Asr, Maghrib and Isha for your location, with a live countdown and 12 calculation methods. Embed it on any website.">
+  <meta property="og:url" content="{{SITE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Prayer Times Widget", "url": "{{SITE_URL}}", "applicationCategory": "LifestyleApplication", "operatingSystem": "Any (web browser)", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Free prayer times widget showing today's Fajr, Dhuhr, Asr, Maghrib and Isha for your location, with a live countdown and 12 calculation methods. Embed it on any website.", "isBasedOn": "{{LINK_ORIGIN}}/prayer-times", "provider": {"@type": "Organization", "name": "QiblaFind", "url": "{{LINK_ORIGIN}}/"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which calculation method should I choose?", "acceptedAnswer": {"@type": "Answer", "text": "Follow your local mosque if it publishes a timetable. Otherwise the Muslim World League method is a widely used default, and regional authorities such as Umm al-Qura, ISNA or Diyanet are common in their regions."}}, {"@type": "Question", "name": "Why are my times a few minutes different from my mosque's?", "acceptedAnswer": {"@type": "Answer", "text": "Mosques may use a different calculation method, a different Asr convention, or add a few minutes of safety margin. Pick the same method as your mosque to match it closely."}}, {"@type": "Question", "name": "What is the difference between standard and Hanafi Asr?", "acceptedAnswer": {"@type": "Answer", "text": "Asr begins when an object's shadow reaches a set multiple of its height. The standard method uses one times the height, and the Hanafi method uses twice the height, so Hanafi Asr starts later."}}, {"@type": "Question", "name": "Do I need to share my location?", "acceptedAnswer": {"@type": "Answer", "text": "The widget uses your location to calculate times for exactly where you are. To look up another city, use the full prayer times page, which has a city search. Location is only used to calculate results and to look up the name of your city; no account is needed. See the QiblaFind privacy policy."}}]}</script>
+</head>
+<body>
+  <header class="site wrap">
+    <div class="kicker">Free web tool</div>
+    <h1>Prayer Times Widget</h1>
+    <p class="lead">See today's five daily prayer times for your location, with a countdown to the next prayer. Choose the calculation method your community follows. It runs in the browser, with nothing to install.</p>
+  </header>
+
+  <main class="wrap">
+    <div class="tool" style="--frame-h-mobile:1030px;--frame-h-desktop:760px">
+      <iframe src="{{EMBED_ORIGIN}}/embed/prayer-times" title="Prayer times" allow="geolocation"></iframe>
+      <a class="open-full" href="{{LINK_ORIGIN}}/prayer-times">Open full prayer times with reminders →</a>
+    </div>
+
+    <section>
+      <h2>The five daily prayers</h2>
+      <p>The widget lists <strong>Fajr</strong> (dawn), <strong>Dhuhr</strong> (after midday), <strong>Asr</strong> (afternoon), <strong>Maghrib</strong> (just after sunset) and <strong>Isha</strong> (night), plus sunrise, which marks the end of the Fajr time. Each time is worked out from the sun's position at your location on today's date, which is why prayer times change every day and from city to city.</p>
+    </section>
+    <section>
+      <h2>Calculation methods</h2>
+      <p>Organisations differ mainly in the sun angles they use for Fajr and Isha. You can pick the method your mosque or community follows:</p>
+      <ul>
+        <li>Muslim World League</li>
+        <li>Egyptian General Authority</li>
+        <li>University of Islamic Sciences, Karachi</li>
+        <li>Umm al-Qura, Makkah</li>
+        <li>Islamic Society of North America</li>
+        <li>Institute of Geophysics, Tehran</li>
+        <li>Diyanet, Turkey</li>
+        <li>Moonsighting Committee, and the Dubai, Kuwait, Qatar and Singapore methods</li>
+      </ul>
+      <p>For Asr, choose the standard method (Shafi'i, Maliki, Hanbali) or the Hanafi method, which starts Asr later. Details are on the <a href="{{LINK_ORIGIN}}/methodology">methodology page</a>.</p>
+    </section>
+    <section>
+      <h2>Never miss a prayer</h2>
+      <p>The full <a href="{{LINK_ORIGIN}}/prayer-times">prayer times page</a> on QiblaFind can send free <a href="{{LINK_ORIGIN}}/notifications">browser notifications</a> at each prayer time. You can also find the <a href="{{LINK_ORIGIN}}/">Qibla direction</a> from the same site.</p>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <h3>Which calculation method should I choose?</h3>
+      <p>Follow your local mosque if it publishes a timetable. Otherwise the Muslim World League method is a widely used default, and regional authorities such as Umm al-Qura, ISNA or Diyanet are common in their regions.</p>
+      <h3>Why are my times a few minutes different from my mosque&#x27;s?</h3>
+      <p>Mosques may use a different calculation method, a different Asr convention, or add a few minutes of safety margin. Pick the same method as your mosque to match it closely.</p>
+      <h3>What is the difference between standard and Hanafi Asr?</h3>
+      <p>Asr begins when an object's shadow reaches a set multiple of its height. The standard method uses one times the height, and the Hanafi method uses twice the height, so Hanafi Asr starts later.</p>
+      <h3>Do I need to share my location?</h3>
+      <p>The widget uses your location to calculate times for exactly where you are. To look up another city, use the full <a href="{{LINK_ORIGIN}}/prayer-times">prayer times page</a>, which has a city search. Location is only used to calculate results and to look up the name of your city; no account is needed. See the <a href="{{LINK_ORIGIN}}/privacy">QiblaFind privacy policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>Add this widget to your website</h2>
+      <p>Show accurate daily prayer times on your mosque or community website. Copy the code below into any page. It is free to use and needs no sign-up or API key.</p>
+      <div class="card">
+        <pre id="embed-code">&lt;iframe src=&quot;{{LINK_ORIGIN}}/embed/prayer-times&quot; title=&quot;Prayer times&quot; width=&quot;100%&quot; height=&quot;760&quot; style=&quot;border:0;max-width:100%&quot; loading=&quot;lazy&quot; allow=&quot;geolocation&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;font-size:13px&quot;&gt;&lt;a href=&quot;{{LINK_ORIGIN}}/prayer-times&quot;&gt;Prayer times&lt;/a&gt; by QiblaFind&lt;/p&gt;</pre>
+        <button class="copy" type="button" data-copy="embed-code" data-done="Copied">Copy embed code</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>This page is an open-source showcase of the QiblaFind prayer times widget. The widget is provided by <a href="{{LINK_ORIGIN}}/">QiblaFind</a>, a free Qibla finder and prayer times site.</p>
+      <nav aria-label="More QiblaFind tools">
+        <a href="{{LINK_ORIGIN}}/">Online Qibla Finder</a>
+        <a href="{{LINK_ORIGIN}}/prayer-times">Prayer times</a>
+        <a href="{{LINK_ORIGIN}}/hijri-calendar">Hijri calendar</a>
+        <a href="{{LINK_ORIGIN}}/ramadan-{{RAMADAN_YEAR}}">Ramadan {{RAMADAN_YEAR}}</a>
+        <a href="{{LINK_ORIGIN}}/mosque-finder">Mosque finder</a>
+        <a href="{{LINK_ORIGIN}}/qibla-direction">Qibla direction by city</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
