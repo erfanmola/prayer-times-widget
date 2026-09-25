@@ -20,7 +20,7 @@ Paste this where you want the widget to appear. It is free, needs no API key, an
 page that allows iframes:
 
 ```html
-<iframe src="https://qiblafind.net/embed/prayer-times" title="Prayer times" width="100%" height="760" style="border:0;max-width:100%" loading="lazy" allow="geolocation"></iframe>
+<iframe src="https://qiblafind.net/embed/prayer-times" title="Prayer times" width="100%" height="670" style="border:0;max-width:100%" loading="lazy" allow="geolocation"></iframe>
 <p style="font-size:13px"><a href="https://qiblafind.net/prayer-times">Prayer times</a> by QiblaFind</p>
 ```
 
